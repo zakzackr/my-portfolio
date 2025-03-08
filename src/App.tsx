@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Resume from './components/Resume';
+import Works from './components/Works';
+import Others from './components/Others';
+import styled from 'styled-components';
 
-function App() {
+const AppContainer = styled.div`
+  font-family: Arial, sans-serif;
+`;
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <Navbar />
+      <Home />
+      <About />
+      <Resume />
+      <Works />
+      <Others />
+    </AppContainer>
   );
-}
+};
 
 export default App;
