@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building'
+                echo 'Building' 
                 sh 'npm install'
                 sh 'npm run build'
             }
@@ -17,7 +17,7 @@ pipeline {
                     credentialsId: 'my-aws',
                     accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]){
-                        sh(script: 'aws s3 cp /home/jenkins/my-portfolio-agent/workspace/my-portfolio/build/ s3://test-env-my-portfolio/')
+                        sh(script: 'aws s3 cp /home/jenkins/my-portfolio-agent/workspace/my-portfolio_main/build/ s3://test-env-my-portfolio/')
                 }
             }
         }
@@ -45,7 +45,7 @@ pipeline {
                     credentialsId: 'my-aws',
                     accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]){
-                        sh(script: 'aws s3 cp /home/jenkins/my-portfolio-agent/workspace/my-portfolio/build/ s3://prod-env-my-portfolio/')
+                        sh(script: 'aws s3 cp /home/jenkins/my-portfolio-agent/workspace/my-portfolio_main/build/ s3://prod-env-my-portfolio/')
                 }
             }
         }
