@@ -6,3 +6,4 @@ https://rk-portfolio-v1.netlify.app/
 
 # toDo
 - レスポンシブデザインへの対応
+- CI/CDパイプラインの構築
