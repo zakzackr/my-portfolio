@@ -3,29 +3,21 @@ import styled from 'styled-components';
 import Links from './Links'; // Linksコンポーネントのインポート
 
 const Section = styled.section`
-  padding: 100px 20px;
-  min-height: 40vh;
-  background-color: #c0c0c0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.2rem;
+  margin-top: 2.5em;
+  margin-bottom: 1.25rem;
 `;
 
 const Others: React.FC = () => {
   return (
     <Section id="others">
       <div>
-        <h2>Certifications</h2>
+        <h3>Certifications:</h3>
         <p>IELTS 7.5</p>
       </div>
       <div>
-        <h2>Languages</h2>
+        <h3>Languages:</h3>
         <p>Japanese, English(Business level)</p>
       </div>
-      <Links /> {/* Linksコンポーネントの追加 */}
     </Section>
   );
 };

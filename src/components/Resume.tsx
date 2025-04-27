@@ -1,44 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import SkillDonutChart from './SkillDonutChart';
+import TechStack from './TechStack';
 import Experience from './Experience';
 
 const Section = styled.section`
-  padding: 100px 20px;
-  min-height: 60vh;
-  background-color: #d0d0d0;
+  margin-top: 2.5em;
+  margin-bottom: 1.25rem;
+  height: 100vh; /* ← 画面いっぱいに高さを取る！ */
+  width: 100%;   /* ← 画面いっぱいに幅を取る（optionalだけどきれい） */
+  margin: 0;     /* ← 上下マージンいらないなら消す */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const TechRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 40px;
+  justify-content: center; /* 横方向中央 */
+  align-items: center;     /* 縦方向中央 */
+  flex-direction: column;  /* ← 縦並びにするならこれも */
 `;
 
 const Resume: React.FC = () => {
   return (
     <Section id="resume"> 
-      <h2>Experience</h2>
-      <Experience />
-      <h2>Tech Stack</h2>
-      <TechRow>
-        <SkillDonutChart skill="Java" percentage={80} />
-        <SkillDonutChart skill="Spring Boot" percentage={80} />
-        <SkillDonutChart skill="JavaScript" percentage={70} />
-        <SkillDonutChart skill="React" percentage={60} />
-      </TechRow>
-      <TechRow>
-        <SkillDonutChart skill="jQuery" percentage={70} />
-        <SkillDonutChart skill="Python" percentage={80} />
-        <SkillDonutChart skill="Git" percentage={80} />
-        <SkillDonutChart skill="HTML/CSS" percentage={70} />
-      </TechRow>
+      <TechStack></TechStack>
+      <Experience></Experience>
     </Section>
   );
 };

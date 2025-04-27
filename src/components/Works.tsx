@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Section = styled.section`
   padding: 100px 20px;
   min-height: 20vh;
-  background-color: #b0b0b0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +14,7 @@ const Section = styled.section`
 const Works: React.FC = () => {
   return (
     <Section id="works">
-      <h2>Works</h2>
+      <h3>Works:</h3>
       <p>Coming soon...🐕</p>
     </Section>
   );

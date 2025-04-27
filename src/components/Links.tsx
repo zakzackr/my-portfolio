@@ -1,19 +1,29 @@
 import React from 'react';
+import styled from 'styled-components';
+import TechStack from './TechStack';
+import Experience from './Experience';
+
+const Section = styled.section`
+  margin-top: 2.5em;
+  margin-bottom: 1.25rem;
+`;
+
+const LinkWrapper = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
 
 const Links: React.FC = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <h2 style={{ marginBottom: '10px' }}>Links</h2>
-      <div>
-        <a href="https://github.com/zakzackr" target="_blank" rel="noopener noreferrer">
-          <img src="/github-logo.png" alt="GitHub" style={{ width: '40px', height: '40px' }} />
-        </a>
-        <a href="https://qiita.com/shibainuu" target="_blank" rel="noopener noreferrer">
-          <img src="/qiita-logo.png" alt="Qiita" style={{ width: '40px', height: '40px' }} />
-        </a>
-      </div>
-    </div>
+    <Section id="resume">
+      <LinkWrapper>
+        <a href="https://github.com/zakzackr">GitHub</a>
+        <a href="https://qiita.com/shibainuu">Qiita</a>
+      </LinkWrapper>
+    </Section>
   );
 };
 
 export default Links;
+
+

@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   color: #444;
   font-family: Merriweather, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,9 +6,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0e7db;
+  max-width: 42rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+body {
+  margin: 0;
+  color: #444;
+  /* font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; */
+  /* font-family: Merriweather, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0e7db;
+  max-width: 42rem;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: #f59e0b; /* amber-500 */
+  text-underline-offset: 1px;
+  border-bottom: 2px solid transparent; /* 最初は透明なボーダー */
+  border-bottom-width: 1px;
+  transition: border-color 0.2s ease; /* なめらかな変化 */
+}
+
+a:hover {
+  border-color: #f59e0b; /* hover時だけボーダーに色をつける */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #525252;
+  text-decoration-thickness: 4px;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
