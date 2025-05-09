@@ -29,7 +29,7 @@ export default function PostsPage({ posts }: PostsPageProps) {
               <Link href={`/posts/${slug}`} className="text-xl">
                 <div className="flex justify-between items-center">
                   <span className="text-xl font-bold mr-10">{title}</span>
-                  <span className="text-sm">{date}</span>
+                  <span className="text-sm whitespace-nowrap">{date}</span>
                 </div>
               </Link>
             </div>
