@@ -33,7 +33,7 @@ const TechStack: React.FC = () => {
           <li className="relative pl-6 mb-1">
             <span className="absolute left-2 text-brown-800">–</span>
             <span className="font-bold">React</span>, 
-            <span className="font-bold">jQuery</span>, 
+            <span className="font-bold"> jQuery</span>, 
             Next.js
           </li>
         </ul>
