@@ -21,7 +21,7 @@ const TLDR: React.FC = () => {
                 <h2 className="text-xl font-semibold text-gray-900 pb-2 border-b border-gray-200 mb-4">
                     TL;DR
                 </h2>
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-sm text-gray-700 leading-relaxed mb-6">
                     Software Engineer in Japan. Currently interested in Golang
                     and AI agents.
                 </p>

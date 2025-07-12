@@ -12,7 +12,6 @@ export default function Home() {
             <div className="pt-16">
                 <div className="max-w-7xl mx-auto px-6 py-8">
                     <div className="flex flex-col lg:flex-row gap-8">
-                        {/* Left Sidebar */}
                         <div className="lg:w-80 lg:flex-shrink-0">
                             <Sidebar />
                         </div>
@@ -21,7 +20,6 @@ export default function Home() {
                         <div className="flex-1 min-w-0">
                             <div className="space-y-6">
                                 <TLDR />
-                                {/* <PopularRepositories /> */}
                                 <TechStack />
                             </div>
                         </div>
