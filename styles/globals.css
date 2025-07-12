@@ -67,3 +67,65 @@ a:hover {
   font-weight: 500;
   color: #24292f;
 }
+
+/* GitHub Calendar Styles */
+.calendar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.calendar .contrib-column {
+  padding: 0 1px;
+}
+
+.calendar .contrib-number {
+  font-size: 11px;
+  color: #656d76;
+  font-weight: 400;
+}
+
+.calendar .contrib-footer {
+  font-size: 11px;
+  color: #656d76;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar .contrib-legend {
+  font-size: 11px;
+  color: #656d76;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.calendar .day {
+  border-radius: 2px;
+  width: 10px;
+  height: 10px;
+}
+
+.calendar .day[data-level="0"] {
+  background-color: #ebedf0;
+}
+
+.calendar .day[data-level="1"] {
+  background-color: #9be9a8;
+}
+
+.calendar .day[data-level="2"] {
+  background-color: #40c463;
+}
+
+.calendar .day[data-level="3"] {
+  background-color: #30a14e;
+}
+
+.calendar .day[data-level="4"] {
+  background-color: #216e39;
+}

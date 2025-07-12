@@ -18,7 +18,7 @@ const TechStack: React.FC = () => {
 
   return (
     <div className="mb-6">
-      <h2 className="text-lg font-semibold mb-4 pb-2 border-b border-gray-200">Popular languages</h2>
+      <h3 className="text-md font-semibold mb-4 pb-2 border-b border-gray-200">Popular languages</h3>
       
       <div className="flex flex-wrap gap-2 mb-6">
         {languages.map((lang) => (
@@ -37,7 +37,7 @@ const TechStack: React.FC = () => {
         ))}
       </div>
 
-      <h2 className="text-lg font-semibold mb-4 pb-2 border-b border-gray-200">Tech Stack</h2>
+      <h3 className="text-md font-semibold mb-4 pb-2 border-b border-gray-200">Tech Stack</h3>
       
       <div className="space-y-4">
         {technologies.map((tech) => (

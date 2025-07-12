@@ -2,8 +2,7 @@ import React from 'react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="mt-10 mb-5">
-      <h3 className="text-lg font-bold">Experience</h3>
+    <section id="experience" className="mt-2 mb-5">
 
       <div className="mb-6">
         <p className="font-bold mb-2">同志社大学 (2018/04 - 2023/03)</p>
