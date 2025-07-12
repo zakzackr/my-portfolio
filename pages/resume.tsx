@@ -1,18 +1,26 @@
 // pages/resume.tsx
-import Resume from '@/components/Resume'
-import Others from '@/components/Others'
+import Sidebar from '@/components/Sidebar'
+import ResumeContent from '@/components/ResumeContent'
 import Navbar from '@/components/Navbar'
-
-import Link from 'next/link'
 
 export default function ResumePage() {
   return (
-    <main>
+    <main className="min-h-screen bg-white">
       <Navbar />
-      <div className="p-16 max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold mt-8 mb-4">Resume</h1>
-        <Resume />
-        <Others />
+      <div className="pt-16">
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Left Sidebar */}
+            <div className="lg:w-80 lg:flex-shrink-0">
+              <Sidebar />
+            </div>
+            
+            {/* Right Content */}
+            <div className="flex-1 min-w-0">
+              <ResumeContent />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )

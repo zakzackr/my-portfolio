@@ -4,8 +4,8 @@ const TLDR: React.FC = () => {
     return (
         <div className="mb-6">
             {/* Header like GitHub repo file */}
-            <div className="bg-gray-50 border border-gray-200 rounded-t-lg px-4 py-2 border-b-0">
-                <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="border border-gray-200 rounded-lg p-6">
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
                     <svg
                         className="w-4 h-4"
                         fill="currentColor"
@@ -17,11 +17,8 @@ const TLDR: React.FC = () => {
                     <span>/</span>
                     <span className="font-bold">README.md</span>
                 </div>
-            </div>
 
-            {/* Content area */}
-            <div className="bg-white border border-gray-200 rounded-b-lg p-6">
-                <h2 className="text-xl font-semibold mb-4 text-gray-900">
+                <h2 className="text-xl font-semibold text-gray-900 pb-2 border-b border-gray-200 mb-4">
                     TL;DR
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
