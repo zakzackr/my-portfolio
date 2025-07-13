@@ -8,7 +8,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <Head>
                 <title>Ryuichi Kozaki</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Component {...pageProps} />
         </>
