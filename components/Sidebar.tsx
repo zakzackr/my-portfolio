@@ -49,7 +49,7 @@ const Sidebar: React.FC = () => {
             {/* Social Links */}
             <div className="space-y-2 text-sm lg:space-y-2">
                 {/* Location */}
-                <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                <div className="flex items-center justify-start gap-2 text-gray-600">
                     <svg
                         className="w-4 h-4 flex-shrink-0"
                         fill="currentColor"
@@ -63,7 +63,7 @@ const Sidebar: React.FC = () => {
                 {/* Social Links Container - Responsive Layout */}
                 <div className="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-4 lg:gap-2">
                     {/* GitHub */}
-                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                    <div className="flex items-center justify-start gap-2 text-gray-600">
                         <svg
                             className="w-4 h-4 flex-shrink-0"
                             fill="currentColor"
@@ -80,7 +80,7 @@ const Sidebar: React.FC = () => {
                     </div>
 
                     {/* Qiita */}
-                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                    <div className="flex items-center justify-start gap-2 text-gray-600">
                         <svg
                             className="w-4 h-4 flex-shrink-0"
                             fill="currentColor"
@@ -98,7 +98,7 @@ const Sidebar: React.FC = () => {
                     </div>
 
                     {/* Zenn */}
-                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                    <div className="flex items-center justify-start gap-2 text-gray-600">
                         <svg
                             className="w-4 h-4 flex-shrink-0"
                             fill="currentColor"
@@ -118,11 +118,11 @@ const Sidebar: React.FC = () => {
 
             {/* Favorites */}
             <div className="mt-6">
-                <h3 className="text-sm font-semibold text-gray-900 mb-3 text-center lg:text-left">
+                <h3 className="text-sm font-semibold text-gray-900 mb-3 text-left">
                     Favorites
                 </h3>
                 <TooltipProvider>
-                    <div className="flex flex-row flex-wrap justify-center lg:justify-start items-center gap-2 sm:gap-3">
+                    <div className="flex flex-row flex-wrap justify-start items-center gap-2 sm:gap-3">
                         <Tooltip>
                             <TooltipTrigger asChild>
                                 <Avatar className="w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hover:opacity-80 transition-opacity">
