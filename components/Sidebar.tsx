@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
+import TerminalModal from "./TerminalModal";
+
 const Sidebar: React.FC = () => {
+    const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+
+    const handleFollowClick = () => {
+        setIsTerminalOpen(true);
+    };
+
     return (
         <div className="w-full">
             {/* Profile Image */}
@@ -24,7 +39,10 @@ const Sidebar: React.FC = () => {
             </div>
 
             {/* Follow Button */}
-            <button className="w-full mb-4 px-4 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 transition-colors">
+            <button 
+                onClick={handleFollowClick}
+                className="w-full mb-4 px-4 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 transition-colors"
+            >
                 Follow
             </button>
 
@@ -98,23 +116,126 @@ const Sidebar: React.FC = () => {
             {/* Favorites */}
             <div className="mt-6">
                 <h3 className="text-sm font-semibold text-gray-900 mb-3">
-                    Achievements
+                    Favorites
                 </h3>
-                <div className="flex gap-2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">🏆</span>
+                <TooltipProvider>
+                    <div className="flex flex-row flex-wrap items-center gap-2">
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Avatar className="w-12 h-12 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <AvatarImage
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                        alt="Spring Boot"
+                                    />
+                                    <AvatarFallback>SB</AvatarFallback>
+                                </Avatar>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-white border border-gray-200 text-gray-900 shadow-lg p-4 max-w-xs">
+                                <div className="flex items-center gap-3">
+                                    <Avatar className="w-16 h-16">
+                                        <AvatarImage
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                            alt="Spring Boot"
+                                        />
+                                        <AvatarFallback>SB</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <h4 className="font-semibold text-base">Spring Boot</h4>
+                                        <p className="text-sm text-gray-600">Java framework</p>
+                                    </div>
+                                </div>
+                            </TooltipContent>
+                        </Tooltip>
+
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Avatar className="w-12 h-12 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <AvatarImage
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+                                        alt="Go"
+                                    />
+                                    <AvatarFallback>GO</AvatarFallback>
+                                </Avatar>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-white border border-gray-200 text-gray-900 shadow-lg p-4 max-w-xs">
+                                <div className="flex items-center gap-3">
+                                    <Avatar className="w-16 h-16">
+                                        <AvatarImage
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+                                            alt="Go"
+                                        />
+                                        <AvatarFallback>GO</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <h4 className="font-semibold text-base">Go</h4>
+                                        <p className="text-sm text-gray-600">Programming language</p>
+                                    </div>
+                                </div>
+                            </TooltipContent>
+                        </Tooltip>
+
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Avatar className="w-12 h-12 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <AvatarImage
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                        alt="Next.js"
+                                    />
+                                    <AvatarFallback>NX</AvatarFallback>
+                                </Avatar>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-white border border-gray-200 text-gray-900 shadow-lg p-4 max-w-xs">
+                                <div className="flex items-center gap-3">
+                                    <Avatar className="w-16 h-16">
+                                        <AvatarImage
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                            alt="Next.js"
+                                        />
+                                        <AvatarFallback>NX</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <h4 className="font-semibold text-base">Next.js</h4>
+                                        <p className="text-sm text-gray-600">React framework</p>
+                                    </div>
+                                </div>
+                            </TooltipContent>
+                        </Tooltip>
+
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Avatar className="w-12 h-12 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <AvatarImage
+                                        src="/icons/shadcn.png"
+                                        alt="shadcn/ui"
+                                    />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-white border border-gray-200 text-gray-900 shadow-lg p-4 max-w-xs">
+                                <div className="flex items-center gap-3">
+                                    <Avatar className="w-16 h-16">
+                                        <AvatarImage
+                                            src="/icons/shadcn.png"
+                                            alt="shadcn/ui"
+                                        />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <h4 className="font-semibold text-base">shadcn/ui</h4>
+                                        <p className="text-sm text-gray-600">UI components</p>
+                                    </div>
+                                </div>
+                            </TooltipContent>
+                        </Tooltip>
                     </div>
-                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">🌟</span>
-                    </div>
-                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">💎</span>
-                    </div>
-                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">🚀</span>
-                    </div>
-                </div>
+                </TooltipProvider>
             </div>
+
+            {/* Terminal Modal */}
+            <TerminalModal 
+                isOpen={isTerminalOpen} 
+                onClose={() => setIsTerminalOpen(false)} 
+            />
         </div>
     );
 };

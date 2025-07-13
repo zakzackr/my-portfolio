@@ -1,7 +1,7 @@
 // pages/resume.tsx
 import Sidebar from "@/components/Sidebar";
-import ResumeContent from "@/components/Resume";
 import Navbar from "@/components/Navbar";
+import Resume from "@/components/Resume";
 
 export default function ResumePage() {
     return (
@@ -17,7 +17,7 @@ export default function ResumePage() {
 
                         {/* Right Content */}
                         <div className="flex-1 min-w-0">
-                            <ResumeContent />
+                            <Resume />
                         </div>
                     </div>
                 </div>
