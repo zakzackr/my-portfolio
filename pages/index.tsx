@@ -2,8 +2,8 @@
 import Sidebar from "@/components/Sidebar";
 import TLDR from "@/components/TLDR";
 import PopularRepositories from "@/components/PopularRepositories";
-import TechStack from "@/components/TechStack";
 import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
                         <div className="flex-1 min-w-0">
                             <div className="space-y-6">
                                 <TLDR />
-                                <TechStack />
+                                <Skills />
                             </div>
                         </div>
                     </div>

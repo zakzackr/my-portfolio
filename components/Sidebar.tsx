@@ -95,7 +95,7 @@ const Sidebar: React.FC = () => {
                 </div>
             </div>
 
-            {/* Achievements */}
+            {/* Favorites */}
             <div className="mt-6">
                 <h3 className="text-sm font-semibold text-gray-900 mb-3">
                     Achievements

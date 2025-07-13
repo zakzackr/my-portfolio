@@ -1,34 +1,24 @@
 import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
+import Projects from "@/components/Projects";
 
 export default function ProjectsPage() {
     return (
-        <main>
+        <main className="min-h-screen bg-white">
             <Navbar />
-            <div className="p-16 max-w-2xl mx-auto">
-                <h1 className="text-3xl font-bold mt-8 mb-8">Projects</h1>
-                <div className="mb-3">
-                    <a
-                        href="https://shibainuu.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-bold mb-2 inline-block"
-                    >
-                        Reminder App
-                    </a>
-                    <ul className="list-none p-0 m-0">
-                        <li className="relative pl-6 mb-1">
-                            <span className="absolute left-2 text-brown-800">
-                                –
-                            </span>
-                            Java, Spring Boot, JavaScript, React, MySQL, AWS
-                        </li>
-                        <li className="relative pl-6 mb-1">
-                            <span className="absolute left-2 text-brown-800">
-                                –
-                            </span>
-                            メールでリマインダーをお知らせするアプリ
-                        </li>
-                    </ul>
+            <div className="pt-16">
+                <div className="max-w-7xl mx-auto px-6 py-8">
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        {/* Left Sidebar */}
+                        <div className="lg:w-80 lg:flex-shrink-0">
+                            <Sidebar />
+                        </div>
+
+                        {/* Right Content */}
+                        <div className="flex-1 min-w-0">
+                            <Projects />
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

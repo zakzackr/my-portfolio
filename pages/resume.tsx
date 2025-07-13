@@ -1,6 +1,6 @@
 // pages/resume.tsx
 import Sidebar from "@/components/Sidebar";
-import ResumeContent from "@/components/ResumeContent";
+import ResumeContent from "@/components/Resume";
 import Navbar from "@/components/Navbar";
 
 export default function ResumePage() {

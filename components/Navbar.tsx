@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
                         href="/projects"
                         className="text-sm text-gray-700 hover:text-gray-900 transition"
                     >
-                        Repositories
+                        Projects
                     </Link>
                 </div>
             </div>

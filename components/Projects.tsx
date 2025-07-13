@@ -1,6 +1,6 @@
 import React from "react";
 
-const TLDR: React.FC = () => {
+const Projects: React.FC = () => {
     return (
         <div className="mb-6">
             {/* Header like GitHub repo file */}
@@ -12,31 +12,26 @@ const TLDR: React.FC = () => {
                         </span>
                         <span className="text-gray-400">/</span>
                         <span className="text-gray-900 font-medium">
-                            README
+                            projects
                         </span>
                         <span className="text-gray-500">.md</span>
                     </div>
                 </div>
 
-                <h2 className="text-xl font-semibold text-gray-900 pb-2 border-b border-gray-200 mb-4">
-                    TL;DR
+                <h2 className="text-xl font-semibold text-gray-900 pb-2 border-b border-gray-200 mb-6">
+                    Projects
                 </h2>
+
                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    Software Engineer in Japan.
+                    Currently working on{" "}
+                    <a href="https://github.com/zakzackr/mogumogu">
+                        this fun project
+                    </a>
+                    .
                 </p>
-                <ul className="list-disc ml-4 text-sm text-gray-700 leading-relaxed space-y-1">
-                    <li>Currently interested in Golang and AI agents.</li>
-                    <li>
-                        Working on{" "}
-                        <a href="https://github.com/zakzackr/mogumogu">
-                            this fun project
-                        </a>{" "}
-                        at the moment!
-                    </li>
-                </ul>
             </div>
         </div>
     );
 };
 
-export default TLDR;
+export default Projects;
