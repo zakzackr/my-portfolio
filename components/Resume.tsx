@@ -4,8 +4,8 @@ const Resume: React.FC = () => {
     return (
         <div className="mb-6">
             {/* Header like GitHub repo file */}
-            <div className="border border-gray-200 rounded-lg p-6">
-                <div className="flex items-center text-xs text-gray-600 mb-6">
+            <div className="border border-gray-200 rounded-lg p-4 sm:p-6">
+                <div className="flex items-center text-xs text-gray-600 mb-4 sm:mb-6">
                     <div className="font-mono text-xs">
                         <span className="text-gray-900 font-medium">
                             zakzackr
@@ -93,11 +93,9 @@ const Resume: React.FC = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <h5 className="font-semibold text-gray-900 mb-1">
-                                            <span className="mr-2">
-                                                開発効率の向上
-                                            </span>
+                                    <div className="flex-1 min-w-0">
+                                        <h5 className="font-semibold text-gray-900 mb-1 flex flex-col sm:flex-row sm:items-center gap-2">
+                                            <span>開発効率の向上</span>
                                             <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
                                                 カレンダーUIライブラリの導入
                                             </span>
@@ -131,11 +129,9 @@ const Resume: React.FC = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <h5 className="font-semibold text-gray-900 mb-1">
-                                            <span className="mr-2">
-                                                パフォーマンス改善
-                                            </span>
+                                    <div className="flex-1 min-w-0">
+                                        <h5 className="font-semibold text-gray-900 mb-1 flex flex-col sm:flex-row sm:items-center gap-2">
+                                            <span>パフォーマンス改善</span>
                                             <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
                                                 89%向上
                                             </span>
@@ -167,11 +163,9 @@ const Resume: React.FC = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <h5 className="font-semibold text-gray-900 mb-1">
-                                            <span className="mr-2">
-                                                技術面接
-                                            </span>
+                                    <div className="flex-1 min-w-0">
+                                        <h5 className="font-semibold text-gray-900 mb-1 flex flex-col sm:flex-row sm:items-center gap-2">
+                                            <span>技術面接</span>
                                             <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">
                                                 面接官
                                             </span>
