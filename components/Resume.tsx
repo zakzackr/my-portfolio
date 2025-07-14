@@ -171,7 +171,7 @@ const Resume: React.FC = () => {
                                             </span>
                                         </h5>
                                         <p className="text-sm text-gray-600 leading-relaxed">
-                                            新規インターンのコーディング面接の作問と面接官を担当。一部の面接では採用の権限をいただくなど、リーダーシップを発揮。
+                                            新規インターン採用プロセスにおいて、コーディング面接の作問と面接官を担当。
                                         </p>
                                     </div>
                                 </div>
