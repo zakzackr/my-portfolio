@@ -34,7 +34,7 @@ const TLDR: React.FC = () => {
                         >
                             this fun project
                         </a>{" "}
-                        at the moment!
+                        at the moment!!
                     </li>
                 </ul>
             </div>
