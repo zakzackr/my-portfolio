@@ -44,6 +44,12 @@ const Navbar: React.FC = () => {
                         Resume
                     </Link>
                     <Link
+                        href="/oss"
+                        className="text-sm text-gray-700 hover:text-gray-900 transition"
+                    >
+                        OSS
+                    </Link>
+                    <Link
                         href="/projects"
                         className="text-sm text-gray-700 hover:text-gray-900 transition"
                     >
@@ -99,6 +105,13 @@ const Navbar: React.FC = () => {
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Resume
+                        </Link>
+                        <Link
+                            href="/oss"
+                            className="block px-3 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            OSS
                         </Link>
                         <Link
                             href="/projects"

@@ -25,7 +25,20 @@ const TLDR: React.FC = () => {
                     Software Engineer in Japan.
                 </p>
                 <ul className="list-disc ml-4 text-sm text-gray-700 leading-relaxed space-y-1 sm:space-y-2">
-                    <li>Currently interested in Golang and AI agents.</li>
+                    <li>
+                        Currently interested in Golang, Security
+                        (Authentication), and AI agents.
+                    </li>
+                    <li>
+                        Contributing to{" "}
+                        <a
+                            href="https://github.com/supabase/supabase"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Supabase
+                        </a>{" "}
+                        OSS project.
+                    </li>
                     <li>
                         Working on{" "}
                         <a
