@@ -26,8 +26,8 @@ const TLDR: React.FC = () => {
                 </p>
                 <ul className="list-disc ml-4 text-sm text-gray-700 leading-relaxed space-y-1 sm:space-y-2">
                     <li>
-                        Currently interested in Golang, Security
-                        (Authentication), and AI agents.
+                        Currently interested in Golang and security (especially
+                        authentication).
                     </li>
                     <li>
                         Contributing to{" "}

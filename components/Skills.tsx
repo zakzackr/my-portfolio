@@ -5,7 +5,14 @@ const TechStack: React.FC = () => {
     const technologies = [
         {
             category: "Languages",
-            items: ["Java", "Python", "JavaScript", "Go", "TypeScript"],
+            items: [
+                "Java",
+                "Python",
+                "JavaScript",
+                "Go",
+                "TypeScript",
+                "Swift",
+            ],
             core: ["Java", "Python", "JavaScript"],
         },
         {
