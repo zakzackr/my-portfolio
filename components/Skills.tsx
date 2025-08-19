@@ -22,7 +22,7 @@ const TechStack: React.FC = () => {
         },
         {
             category: "Frontend",
-            items: ["React", "jQuery", "shadcn/ui", "Next.js"],
+            items: ["React", "jQuery", "shadcn/ui", "Next.js", "SwiftUI"],
             core: ["React", "jQuery", "shadcn/ui"],
         },
         {
