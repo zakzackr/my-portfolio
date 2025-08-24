@@ -23,14 +23,7 @@ const Projects: React.FC = () => {
                 </h2>
 
                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    Currently working on{" "}
-                    <a
-                        href="https://github.com/zakzackr/mogumogu"
-                        className="text-blue-600 hover:underline"
-                    >
-                        this fun project
-                    </a>
-                    .
+                    Currently working on an iOS app related to food and dining.
                 </p>
             </div>
         </div>

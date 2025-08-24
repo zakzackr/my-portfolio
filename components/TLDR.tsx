@@ -40,14 +40,8 @@ const TLDR: React.FC = () => {
                         OSS project.
                     </li>
                     <li>
-                        Working on{" "}
-                        <a
-                            href="https://github.com/zakzackr/mogumogu"
-                            className="text-blue-600 hover:underline"
-                        >
-                            this fun project
-                        </a>{" "}
-                        at the moment!!
+                        Working on an iOS app related to food and dining at the
+                        moment!
                     </li>
                 </ul>
             </div>
