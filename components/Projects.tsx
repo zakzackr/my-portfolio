@@ -190,14 +190,15 @@ const Projects: React.FC = () => {
                                 Reminder App
                             </h3>
                             <p className="text-gray-600 font-medium">
-                                This is an application that sends email
+                                I developed an application that sends email
                                 reminders to users at their specified times. I
                                 implemented authentication and authorization
-                                using Spring Security from scratch. I also
-                                addressed XSS and CSRF vulnerabilities and
-                                developed a JWT-based authentication system
-                                using access and refresh tokens, balancing both
-                                security and user experience.
+                                from scratch using Spring Security.
+                                Additionally, I addressed XSS and CSRF
+                                vulnerabilities and designed a JWT-based
+                                authentication system with access and refresh
+                                tokens, ensuring a balance between robust
+                                security and a seamless user experience.
                             </p>
                         </div>
 
