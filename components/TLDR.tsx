@@ -22,13 +22,10 @@ const TLDR: React.FC = () => {
                     TL;DR
                 </h2>
                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    Software Engineer in Japan.
+                    I'm a software engineer in Japan. I enjoy building software
+                    and exploring new technologies.
                 </p>
                 <ul className="list-disc ml-4 text-sm text-gray-700 leading-relaxed space-y-1 sm:space-y-2">
-                    <li>
-                        Currently interested in Golang and security (especially
-                        authentication).
-                    </li>
                     <li>
                         Contributing to{" "}
                         <a
