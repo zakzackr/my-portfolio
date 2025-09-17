@@ -25,6 +25,9 @@ const TLDR: React.FC = () => {
                     I'm a software engineer in Japan. I enjoy building software
                     and exploring new technologies.
                 </p>
+                <p className="text-sm text-gray-700 leading-relaxed mb-2">
+                    My Recent Activities:
+                </p>
                 <ul className="list-disc ml-4 text-sm text-gray-700 leading-relaxed space-y-1 sm:space-y-2">
                     <li>
                         Contributing to{" "}
@@ -34,11 +37,17 @@ const TLDR: React.FC = () => {
                         >
                             Supabase
                         </a>{" "}
-                        OSS project.
+                        OSS project
                     </li>
+                    <li>Working on an iOS app related to food and dining</li>
                     <li>
-                        Working on an iOS app related to food and dining at the
-                        moment!
+                        Publishing articles on{" "}
+                        <a
+                            href="https://zenn.dev/shibainuu"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Zenn
+                        </a>
                     </li>
                 </ul>
             </div>
