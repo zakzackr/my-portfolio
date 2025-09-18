@@ -22,8 +22,8 @@ const TLDR: React.FC = () => {
                     TL;DR
                 </h2>
                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    I'm a software engineer in Japan. I enjoy building software
-                    and exploring new technologies.
+                    I'm a software engineer in Japan. I love building apps and
+                    exploring new technologies.
                 </p>
                 <p className="text-sm text-gray-700 leading-relaxed mb-2">
                     My Recent Activities:
