@@ -32,7 +32,7 @@ const TLDR: React.FC = () => {
                     <li>
                         Contributing to{" "}
                         <a
-                            href="https://github.com/supabase/supabase"
+                            href="https://github.com/supabase"
                             className="text-blue-600 hover:underline"
                         >
                             Supabase
@@ -47,6 +47,15 @@ const TLDR: React.FC = () => {
                             className="text-blue-600 hover:underline"
                         >
                             Zenn
+                        </a>
+                    </li>
+                    <li>
+                        Adding content to{" "}
+                        <a
+                            href="https://github.com/zakzackr/web-security-guide"
+                            className="text-blue-600 hover:underline"
+                        >
+                            web-security-guide
                         </a>
                     </li>
                 </ul>
