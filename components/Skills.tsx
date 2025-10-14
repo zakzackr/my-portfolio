@@ -47,6 +47,7 @@ const TechStack: React.FC = () => {
                 "RDS",
                 "Vercel",
                 "Docker",
+                "Firebase",
             ],
             core: [
                 "Route53",
