@@ -62,8 +62,8 @@ const Resume: React.FC = () => {
                         {/* Project Description */}
                         <div className="mb-6">
                             <p className="text-gray-700 leading-relaxed">
-                                医療・介護分野向けの勤務表自動作成システム「看護配置マイスター」の開発に従事。
-                                新規プロダクト開発におけるフロントエンドおよびバックエンド開発を担当。
+                                医療・介護分野向けの勤務表自動作成システム「働き方マイスター」の開発に従事。
+                                主要機能のフロントエンドおよびバックエンド開発を担当。
                             </p>
                         </div>
 
