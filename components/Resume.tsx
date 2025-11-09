@@ -63,7 +63,7 @@ const Resume: React.FC = () => {
                         <div className="mb-6">
                             <p className="text-gray-700 leading-relaxed">
                                 医療・介護分野向けの勤務表自動作成システム「看護配置マイスター」の開発に従事。
-                                APIの設計・実装からフロントエンド開発まで、フルスタック開発を担当。
+                                新規プロダクト開発におけるフロントエンドおよびバックエンド開発を担当。
                             </p>
                         </div>
 
