@@ -27,7 +27,7 @@ const TechStack: React.FC = () => {
         },
         {
             category: "Databases",
-            items: ["MySQL", "PostgreSQL"],
+            items: ["MySQL", "PostgreSQL", "Redis"],
             core: ["MySQL"],
         },
         {
